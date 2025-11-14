@@ -12,6 +12,7 @@ For VRM/Rigify/Unknown, unmapped bones are standardized (e.g., .L/.R -> _l/_r, .
 # 操作步骤：【首先，备份原始项目！】，选中骨骼进入编辑模式，将此脚本拖入Blender的脚本页面点击运行
 # ---
 # 操作前请先备份项目工程！
+# 如果缺失root根骨和pelvis请先手动添加
 # 需要选中骨骼在编辑模式下运行此脚本
 # 支持骨骼类型: VRM / Rigify / Mixamo
 # 注意：Mixamo骨骼会删除 头部/手指/脚趾 的_End末端骨骼
@@ -248,4 +249,5 @@ def rename_armature_to_ue_standard_and_remove_mixamo_ends():
 # 执行函数
 
 rename_armature_to_ue_standard_and_remove_mixamo_ends()
+
 
